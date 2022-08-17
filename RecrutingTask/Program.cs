@@ -17,7 +17,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddLogging(builder => builder.AddConsole());
 
-builder.Services.AddControllers(options => {
+builder.Services.AddControllers(options =>
+{
     options.FormatterMappings.SetMediaTypeMappingForFormat
             ("xml", MediaTypeHeaderValue.Parse("application/xml"));
     options.FormatterMappings.SetMediaTypeMappingForFormat

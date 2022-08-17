@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations;
 namespace RecrutingTask.Api.Controllers.Books
 {
 
+    /// <summary>
+    /// CRUD controller for Book entity.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [FormatFilter]
@@ -133,7 +136,7 @@ namespace RecrutingTask.Api.Controllers.Books
         }
 
         /// <summary>
-        /// Deletes car by Id.
+        /// Deletes book by Id.
         /// </summary>
         /// <param name="id">Id of the book to be deleted.</param>
         /// <param name="cancellationToken">Token utilized for request cancellation</param>
